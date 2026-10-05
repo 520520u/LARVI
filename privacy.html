@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - LARVIP</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.65;
+            color: #333;
+            background: #fff6f2;
+        }
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 24px rgba(120, 32, 48, 0.08);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #e85a3c;
+        }
+        .logo {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 1rem;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+        .logo img { width: 100%; height: 100%; display: block; }
+        h1 { color: #c4374e; margin-bottom: 0.35rem; }
+        .updated { color: #777; font-size: 0.9rem; }
+        h2 {
+            color: #333;
+            margin: 1.75rem 0 0.75rem;
+            padding-bottom: 0.35rem;
+            border-bottom: 1px solid #eee;
+            font-size: 1.15rem;
+        }
+        p, li { margin-bottom: 0.85rem; }
+        ul { margin-left: 1.4rem; }
+        .highlight {
+            background: #fff1ea;
+            border-left: 4px solid #e85a3c;
+            padding: 1rem 1.1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            background: #e85a3c;
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.35rem;
+            border-radius: 999px;
+            font-weight: 600;
+        }
+        a { color: #c4374e; }
+        .language-selector { text-align: center; margin-bottom: 1.25rem; }
+        .lang-btn {
+            background: white;
+            border: 2px solid #e85a3c;
+            color: #c4374e;
+            padding: 0.35rem 0.8rem;
+            border-radius: 999px;
+            margin: 0 0.2rem;
+            cursor: pointer;
+            font-size: 0.85rem;
+        }
+        .lang-btn.active, .lang-btn:hover { background: #e85a3c; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-selector">
+            <button class="lang-btn" onclick="changeLanguage('en', this)">EN</button>
+            <button class="lang-btn" onclick="changeLanguage('es', this)">ES</button>
+            <button class="lang-btn" onclick="changeLanguage('zh', this)">中文</button>
+        </div>
+        <div class="header">
+            <div class="logo"><img src="icon.png" alt="LARVIP"></div>
+            <h1 id="title">Privacy Policy</h1>
+            <p class="updated" id="updated">Last updated: October 5, 2026</p>
+        </div>
+        <div id="policy"></div>
+        <a class="back-link" id="back" href="index.html">← Back to LARVIP</a>
+    </div>
+    <script>
+        const pages = {
+            en: {
+                title: "Privacy Policy - LARVIP",
+                heading: "Privacy Policy",
+                updated: "Last updated: October 5, 2026",
+                back: "← Back to LARVIP",
+                html: `
+                <div class="highlight"><strong>Summary:</strong> LARVIP stores your codes on your iPhone. We do not ask for an account. We do not sell personal information, and we do not disclose it to third parties for their own purposes.</div>
+                <h2>1. Introduction</h2>
+                <p>This Privacy Policy describes how the LARVIP application for iPhone (“the App”) and the connection service that supports it handle information. By using the App, you agree to the practices described here.</p>
+                <h2>2. Information we process</h2>
+                <p>The App does not ask you to create an online account, and it does not ask for your name, email address, or phone number.</p>
+                <ul>
+                    <li><strong>Codes.</strong> Your access code and alternate code are stored in the iOS Keychain on your device. We do not receive those codes.</li>
+                    <li><strong>Link.</strong> If you paste a link or scan its QR code, the App uses that link to activate your access with our service. The service records that the link was used.</li>
+                    <li><strong>Connection.</strong> While the connection is on, traffic to the destinations included in your access is sent through our service so it can be delivered. Our service can see those destinations and the amount of data transferred, because that is required to provide the connection and apply its data allowance. Traffic that is not part of your access stays on your normal internet connection and is not sent to us.</li>
+                    <li><strong>Camera.</strong> If you choose to scan a QR code, the camera is used on the device to read that code. The App does not save the photo.</li>
+                    <li><strong>On the device.</strong> The App stores your access and preferences locally so the connection can work.</li>
+                </ul>
+                <h2>3. How information is used</h2>
+                <p>Information is used only to operate the App and the connection: to activate the link you add, to connect and disconnect, to deliver traffic for the destinations in your access, and to account for data use. It is not used for advertising or tracking across other companies’ apps and websites.</p>
+                <h2>4. Data sharing</h2>
+                <p>We do not sell your personal information. We do not disclose personal information to third parties for their own purposes, including advertising or analytics. We do not use the connection to collect data for any purpose other than providing the service you request.</p>
+                <p>Standard Apple system services, such as the VPN permission prompt, the camera, or iOS itself, may process technical data required for the App to function on your device.</p>
+                <h2>5. Data retention and deletion</h2>
+                <p>Codes and the saved access remain on your device until you remove them in the App or uninstall it. Uninstalling the App removes the App’s local data in the ordinary course of iOS. Connection records kept by the service, such as the fact that a link was activated and how much data was transferred, are kept only as long as needed to operate that access and its allowance.</p>
+                <h2>6. Security</h2>
+                <p>Codes are stored in the iOS Keychain. We use reasonable measures to help protect information processed by the service. No method of electronic transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
+                <h2>7. Children’s privacy</h2>
+                <p>The App is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
+                <h2>8. Independent status</h2>
+                <p>LARVIP is an independent app. It is not affiliated with, endorsed by, or connected to any entity other than itself.</p>
+                <h2>9. Changes to this policy</h2>
+                <p>We may update this Privacy Policy from time to time. The updated version will be posted on this page with a revised date.</p>
+                <h2>10. Contact</h2>
+                <p>If you have questions about this Privacy Policy or LARVIP, contact us at <a href="mailto:info@520apps.com">info@520apps.com</a>.</p>`
+            },
+            es: {
+                title: "Política de Privacidad - LARVIP",
+                heading: "Política de Privacidad",
+                updated: "Última actualización: 5 de octubre de 2026",
+                back: "← Volver a LARVIP",
+                html: `
+                <div class="highlight"><strong>Resumen:</strong> LARVIP guarda tus códigos en el iPhone. No pedimos una cuenta. No vendemos información personal ni la cedemos a terceros para sus propios fines.</div>
+                <h2>1. Introducción</h2>
+                <p>Esta Política de Privacidad describe cómo tratan la información la aplicación LARVIP para iPhone («la App») y el servicio de conexión que la sostiene. Al usar la App, aceptas lo que se describe aquí.</p>
+                <h2>2. Información que tratamos</h2>
+                <p>La App no te pide crear una cuenta en línea, ni tu nombre, correo o teléfono.</p>
+                <ul>
+                    <li><strong>Códigos.</strong> Tu código de acceso y tu código alternativo se guardan en el llavero de iOS, en tu aparato. Nosotros no recibimos esos códigos.</li>
+                    <li><strong>Enlace.</strong> Si pegas un enlace o escaneas su código QR, la App lo usa para activar tu acceso con nuestro servicio. El servicio registra que ese enlace se ha usado.</li>
+                    <li><strong>Conexión.</strong> Con la conexión encendida, el tráfico hacia los destinos incluidos en tu acceso se envía a través de nuestro servicio para poder entregarlo. El servicio puede ver esos destinos y el volumen de datos transferidos, porque hace falta para prestar la conexión y aplicar su límite de datos. El tráfico que no forma parte de tu acceso sigue por tu conexión normal de internet y no se nos envía.</li>
+                    <li><strong>Cámara.</strong> Si decides escanear un código QR, la cámara se usa en el aparato para leer ese código. La App no guarda la foto.</li>
+                    <li><strong>En el aparato.</strong> La App guarda tu acceso y tus preferencias en local para que la conexión pueda funcionar.</li>
+                </ul>
+                <h2>3. Cómo se usa la información</h2>
+                <p>La información se usa solo para hacer funcionar la App y la conexión: activar el enlace que añades, conectar y desconectar, entregar el tráfico de los destinos de tu acceso y contabilizar el uso de datos. No se usa para publicidad ni para rastrearte en apps y webs de otras empresas.</p>
+                <h2>4. Cesión de datos</h2>
+                <p>No vendemos tu información personal. No la cedemos a terceros para sus propios fines, incluida la publicidad o la analítica. No usamos la conexión para recoger datos con un fin distinto de prestar el servicio que pides.</p>
+                <p>Los servicios habituales de Apple, como el aviso de permiso de VPN, la cámara o el propio iOS, pueden tratar los datos técnicos necesarios para que la App funcione en tu aparato.</p>
+                <h2>5. Conservación y eliminación</h2>
+                <p>Los códigos y el acceso guardado permanecen en tu aparato hasta que los quitas en la App o la desinstalas. Desinstalar la App elimina los datos locales de la App en el funcionamiento normal de iOS. Los registros de conexión que conserva el servicio, como el hecho de que un enlace se activó y cuántos datos se transfirieron, se guardan solo el tiempo necesario para operar ese acceso y su límite.</p>
+                <h2>6. Seguridad</h2>
+                <p>Los códigos se guardan en el llavero de iOS. Aplicamos medidas razonables para proteger la información que trata el servicio. Ningún método de transmisión o almacenamiento electrónico es completamente seguro, y no podemos garantizar una seguridad absoluta.</p>
+                <h2>7. Privacidad de los menores</h2>
+                <p>La App no está dirigida a menores de 13 años y no recogemos a sabiendas información personal de menores.</p>
+                <h2>8. Carácter independiente</h2>
+                <p>LARVIP es una app independiente. No está afiliada, respaldada ni conectada con ninguna entidad ajena a ella misma.</p>
+                <h2>9. Cambios de esta política</h2>
+                <p>Podemos actualizar esta Política de Privacidad. La versión nueva se publicará en esta página con la fecha revisada.</p>
+                <h2>10. Contacto</h2>
+                <p>Si tienes preguntas sobre esta Política de Privacidad o sobre LARVIP, escríbenos a <a href="mailto:info@520apps.com">info@520apps.com</a>.</p>`
+            },
+            zh: {
+                title: "隐私政策 - LARVIP",
+                heading: "隐私政策",
+                updated: "最近更新：2026年10月5日",
+                back: "← 返回 LARVIP",
+                html: `
+                <div class="highlight"><strong>摘要：</strong> LARVIP 将你的密码保存在 iPhone 上。我们不要求注册账户。我们不出售个人信息，也不会为第三方自身的目的而向其披露。</div>
+                <h2>1. 引言</h2>
+                <p>本隐私政策说明 iPhone 应用 LARVIP（“本应用”）及其连接服务如何处理信息。使用本应用即表示你同意这里描述的做法。</p>
+                <h2>2. 我们处理的信息</h2>
+                <p>本应用不要求你创建在线账户，也不索取你的姓名、电子邮箱或电话号码。</p>
+                <ul>
+                    <li><strong>密码。</strong> 访问密码和备用密码保存在你设备的 iOS 钥匙串中。我们不会收到这些密码。</li>
+                    <li><strong>链接。</strong> 如果你粘贴链接或扫描其二维码，本应用会用该链接向我们的服务激活你的访问。服务会记录该链接已被使用。</li>
+                    <li><strong>连接。</strong> 连接打开时，访问范围中包含的目的地的流量会经由我们的服务送达。服务可以看到这些目的地以及传输的数据量，因为提供连接并执行流量额度需要这些信息。不属于你的访问范围的流量仍走你平时的网络，不会发送给我们。</li>
+                    <li><strong>相机。</strong> 如果你选择扫描二维码，相机会在设备上读取该码。本应用不保存照片。</li>
+                    <li><strong>在设备上。</strong> 本应用在本地保存你的访问和偏好，以便连接能够工作。</li>
+                </ul>
+                <h2>3. 信息的用途</h2>
+                <p>信息只用于运行本应用和连接：激活你添加的链接、连接和断开、送达访问范围内的流量，以及统计数据用量。不会用于广告，也不会用于在其他公司的应用和网站上跟踪你。</p>
+                <h2>4. 数据共享</h2>
+                <p>我们不出售你的个人信息。我们不会为第三方自身的目的（包括广告或分析）向其披露个人信息。我们不会把这条连接用于收集与你所请求的服务无关的数据。</p>
+                <p>Apple 的系统服务，例如 VPN 权限提示、相机或 iOS 本身，可能会处理本应用在设备上运行所需的技术数据。</p>
+                <h2>5. 保存与删除</h2>
+                <p>密码和已保存的访问会留在你的设备上，直到你在应用中移除或卸载应用。卸载应用后，iOS 会按通常方式删除应用的本地数据。服务保留的连接记录，例如某个链接已激活以及传输了多少数据，只在运营该访问及其额度所需的期限内保存。</p>
+                <h2>6. 安全</h2>
+                <p>密码保存在 iOS 钥匙串中。我们采取合理措施保护服务所处理的信息。任何电子传输或存储方式都不是绝对安全的，我们不能保证绝对安全。</p>
+                <h2>7. 儿童隐私</h2>
+                <p>本应用不以 13 岁以下儿童为对象，我们也不会故意收集儿童的个人信息。</p>
+                <h2>8. 独立地位</h2>
+                <p>LARVIP 是独立应用，与其自身以外的任何实体均无隶属、认可或关联关系。</p>
+                <h2>9. 本政策的变更</h2>
+                <p>我们可能会更新本隐私政策。更新版本会发布在本页，并注明修订日期。</p>
+                <h2>10. 联系</h2>
+                <p>如果对本隐私政策或 LARVIP 有疑问，请联系 <a href="mailto:info@520apps.com">info@520apps.com</a>。</p>`
+            }
+        };
+
+        function detectLanguage() {
+            const saved = localStorage.getItem('larvip-language');
+            if (saved && pages[saved]) return saved;
+            const browserLang = navigator.language || navigator.userLanguage || 'en';
+            if (browserLang.startsWith('zh')) return 'zh';
+            if (browserLang.startsWith('es')) return 'es';
+            return 'en';
+        }
+
+        function changeLanguage(lang, button) {
+            const page = pages[lang];
+            if (!page) return;
+            document.title = page.title;
+            document.getElementById('title').textContent = page.heading;
+            document.getElementById('updated').textContent = page.updated;
+            document.getElementById('policy').innerHTML = page.html;
+            document.getElementById('back').textContent = page.back;
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            if (button) button.classList.add('active');
+            localStorage.setItem('larvip-language', lang);
+            document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : lang;
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const lang = detectLanguage();
+            const buttons = document.querySelectorAll('.lang-btn');
+            let active = buttons[0];
+            buttons.forEach(btn => {
+                const label = btn.textContent.trim();
+                if ((lang === 'zh' && label === '中文') || (lang === 'es' && label === 'ES') || (lang === 'en' && label === 'EN')) active = btn;
+            });
+            changeLanguage(lang, active);
+        });
+    </script>
+</body>
+</html>
