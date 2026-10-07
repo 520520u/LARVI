@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LARVIP - Private connection</title>
+    <title>LARVIP - VPN for selected websites</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -148,17 +148,17 @@
                 <img src="icon.png" alt="LARVIP">
             </div>
             <h1 id="page-title">LARVIP</h1>
-            <p class="subtitle" id="subtitle">Private connection</p>
+            <p class="subtitle" id="subtitle">VPN for selected websites</p>
 
             <div class="description">
-                <p id="description1"><strong>LARVIP</strong> is a private connection for iPhone. You create two codes on the device, add the link you received, and connect.</p>
-                <p id="description2">The access code opens your connection. The alternate code opens a game and turns the connection off. No account.</p>
+                <p id="description1"><strong>LARVIP</strong> is a VPN for iPhone that sends only the websites included in your link through a secure server. You create an access code, add the link you received, and connect.</p>
+                <p id="description2">Everything else keeps your normal internet connection. No account.</p>
             </div>
 
             <div class="features">
                 <div class="feature">
-                    <h3 id="feature1-title">🔐 Two codes on your iPhone</h3>
-                    <p id="feature1-desc">The access code opens the connection. The alternate code opens a game and turns it off. Both codes stay on the device.</p>
+                    <h3 id="feature1-title">🔐 Access code</h3>
+                    <p id="feature1-desc">The access code opens the app and the VPN. It stays on your iPhone.</p>
                 </div>
                 <div class="feature">
                     <h3 id="feature2-title">🔗 Add your link</h3>
@@ -166,11 +166,15 @@
                 </div>
                 <div class="feature">
                     <h3 id="feature3-title">🟢 Connect</h3>
-                    <p id="feature3-desc">Turn the connection on or off. It turns off by itself after 30 minutes without activity.</p>
+                    <p id="feature3-desc">Turn the VPN on or off. It turns off by itself after 30 minutes without activity.</p>
                 </div>
                 <div class="feature">
-                    <h3 id="feature4-title">🎯 Only your access</h3>
-                    <p id="feature4-desc">Only the destinations included in your link use the connection. Everything else keeps your normal internet connection.</p>
+                    <h3 id="feature4-title">🎯 Only selected websites</h3>
+                    <p id="feature4-desc">Only the websites included in your link use the VPN. Everything else keeps your normal internet connection.</p>
+                </div>
+                <div class="feature">
+                    <h3 id="feature5-title">🎮 Incognito mode (optional)</h3>
+                    <p id="feature5-desc">In Settings you can create a 4-digit PIN. Entering it opens a game instead of LARVIP and turns the VPN off.</p>
                 </div>
             </div>
 
@@ -192,18 +196,20 @@
     <script>
         const translations = {
             en: {
-                title: "LARVIP - Private connection",
-                subtitle: "Private connection",
-                description1: "<strong>LARVIP</strong> is a private connection for iPhone. You create two codes on the device, add the link you received, and connect.",
-                description2: "The access code opens your connection. The alternate code opens a game and turns the connection off. No account.",
-                feature1Title: "🔐 Two codes on your iPhone",
-                feature1Desc: "The access code opens the connection. The alternate code opens a game and turns it off. Both codes stay on the device.",
+                title: "LARVIP - VPN for selected websites",
+                subtitle: "VPN for selected websites",
+                description1: "<strong>LARVIP</strong> is a VPN for iPhone that sends only the websites included in your link through a secure server. You create an access code, add the link you received, and connect.",
+                description2: "Everything else keeps your normal internet connection. No account.",
+                feature1Title: "🔐 Access code",
+                feature1Desc: "The access code opens the app and the VPN. It stays on your iPhone.",
                 feature2Title: "🔗 Add your link",
                 feature2Desc: "Paste the link you received or scan its QR code. The camera is used only to read that code.",
                 feature3Title: "🟢 Connect",
-                feature3Desc: "Turn the connection on or off. It turns off by itself after 30 minutes without activity.",
-                feature4Title: "🎯 Only your access",
-                feature4Desc: "Only the destinations included in your link use the connection. Everything else keeps your normal internet connection.",
+                feature3Desc: "Turn the VPN on or off. It turns off by itself after 30 minutes without activity.",
+                feature4Title: "🎯 Only selected websites",
+                feature4Desc: "Only the websites included in your link use the VPN. Everything else keeps your normal internet connection.",
+                feature5Title: "🎮 Incognito mode (optional)",
+                feature5Desc: "In Settings you can create a 4-digit PIN. Entering it opens a game instead of LARVIP and turns the VPN off.",
                 downloadBtn: "Download on App Store",
                 privacyBtn: "Privacy Policy",
                 legal: "LARVIP is an independent app. It is not affiliated with, endorsed by, or connected to any entity other than itself.",
@@ -212,18 +218,20 @@
                 footerPrivacy: "Privacy Policy"
             },
             es: {
-                title: "LARVIP - Conexión privada",
-                subtitle: "Conexión privada",
-                description1: "<strong>LARVIP</strong> es una conexión privada para iPhone. Creas dos códigos en el aparato, añades el enlace que has recibido y te conectas.",
-                description2: "El código de acceso abre tu conexión. El código alternativo abre un juego y apaga la conexión. Sin cuenta.",
-                feature1Title: "🔐 Dos códigos en tu iPhone",
-                feature1Desc: "El código de acceso abre la conexión. El código alternativo abre un juego y la apaga. Los dos códigos se quedan en el aparato.",
+                title: "LARVIP - VPN para webs seleccionadas",
+                subtitle: "VPN para webs seleccionadas",
+                description1: "<strong>LARVIP</strong> es una VPN para iPhone que envía por un servidor seguro solo las webs incluidas en tu enlace. Creas un código de acceso, añades el enlace que has recibido y te conectas.",
+                description2: "Todo lo demás sigue por tu conexión normal de internet. Sin cuenta.",
+                feature1Title: "🔐 Código de acceso",
+                feature1Desc: "El código de acceso abre la app y la VPN. Se queda en tu iPhone.",
                 feature2Title: "🔗 Añade tu enlace",
                 feature2Desc: "Pega el enlace que has recibido o escanea su código QR. La cámara solo se usa para leer ese código.",
                 feature3Title: "🟢 Conectar",
-                feature3Desc: "Enciende o apaga la conexión. Se apaga sola tras 30 minutos sin actividad.",
-                feature4Title: "🎯 Solo tu acceso",
-                feature4Desc: "Solo los destinos incluidos en tu enlace usan la conexión. Todo lo demás sigue por tu conexión normal de internet.",
+                feature3Desc: "Enciende o apaga la VPN. Se apaga sola tras 30 minutos sin actividad.",
+                feature4Title: "🎯 Solo webs seleccionadas",
+                feature4Desc: "Solo las webs incluidas en tu enlace usan la VPN. Todo lo demás sigue por tu conexión normal de internet.",
+                feature5Title: "🎮 Modo incógnito (opcional)",
+                feature5Desc: "En Configuración puedes crear un PIN de 4 cifras. Al introducirlo se abre un juego en lugar de LARVIP y se apaga la VPN.",
                 downloadBtn: "Descargar en App Store",
                 privacyBtn: "Política de Privacidad",
                 legal: "LARVIP es una app independiente. No está afiliada, respaldada ni conectada con ninguna entidad ajena a ella misma.",
@@ -232,18 +240,20 @@
                 footerPrivacy: "Política de Privacidad"
             },
             zh: {
-                title: "LARVIP - 私人连接",
-                subtitle: "私人连接",
-                description1: "<strong>LARVIP</strong> 是适用于 iPhone 的私人连接。你在本机设置两组密码，添加收到的链接，然后连接。",
-                description2: "访问密码打开你的连接。备用密码打开一个游戏并关闭连接。无需账户。",
-                feature1Title: "🔐 本机两组密码",
-                feature1Desc: "访问密码打开连接。备用密码打开一个游戏并关闭连接。两组密码都只保存在本机。",
+                title: "LARVIP - 指定网站专用 VPN",
+                subtitle: "指定网站专用 VPN",
+                description1: "<strong>LARVIP</strong> 是适用于 iPhone 的 VPN，只把你的链接中包含的网站通过安全服务器连接。你设置访问密码，添加收到的链接，然后连接。",
+                description2: "其余流量仍使用你平时的网络。无需账户。",
+                feature1Title: "🔐 访问密码",
+                feature1Desc: "访问密码用于打开应用和 VPN，只保存在你的 iPhone 上。",
                 feature2Title: "🔗 添加你的链接",
                 feature2Desc: "粘贴你收到的链接，或扫描它的二维码。相机只用于读取该二维码。",
                 feature3Title: "🟢 连接",
-                feature3Desc: "打开或关闭连接。连续 30 分钟没有活动后会自动关闭。",
-                feature4Title: "🎯 仅限你的访问",
-                feature4Desc: "只有链接里包含的目的地会走这条连接。其余流量仍使用你平时的网络。",
+                feature3Desc: "打开或关闭 VPN。连续 30 分钟没有活动后会自动关闭。",
+                feature4Title: "🎯 仅限指定网站",
+                feature4Desc: "只有链接中包含的网站使用 VPN。其余流量仍使用你平时的网络。",
+                feature5Title: "🎮 隐身模式（可选）",
+                feature5Desc: "你可以在设置中创建一个 4 位 PIN。输入后会打开一个游戏而不是 LARVIP，并关闭 VPN。",
                 downloadBtn: "在 App Store 下载",
                 privacyBtn: "隐私政策",
                 legal: "LARVIP 是独立应用，与其自身以外的任何实体均无隶属、认可或关联关系。",
@@ -278,6 +288,8 @@
             document.getElementById('feature3-desc').textContent = t.feature3Desc;
             document.getElementById('feature4-title').textContent = t.feature4Title;
             document.getElementById('feature4-desc').textContent = t.feature4Desc;
+            document.getElementById('feature5-title').textContent = t.feature5Title;
+            document.getElementById('feature5-desc').textContent = t.feature5Desc;
             document.getElementById('download-btn').textContent = t.downloadBtn;
             document.getElementById('privacy-btn').textContent = t.privacyBtn;
             document.getElementById('legal').textContent = t.legal;
